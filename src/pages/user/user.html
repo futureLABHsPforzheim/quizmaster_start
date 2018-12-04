@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+     <ion-title>Choose your name</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3>The Quiz Master</h3>
+  <br>
+  <div>
+    <ion-input type="text" placeholder="Your Name" [(ngModel)]="username"></ion-input>
+  </div>
+
+  <button ion-button icon-start (click)="getName()" class="bottom" round>
+    <ion-icon  name="jet"></ion-icon>
+    Start
+  </button>
+</ion-content>
