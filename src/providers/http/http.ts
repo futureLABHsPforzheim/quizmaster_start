@@ -20,11 +20,7 @@ export class HttpProvider {
   //send Answer
   //Post
   proof(userId, questionId, answerId) {
-      let headers = new Headers();
-      headers.append('Content-Type', 'application/json');
-      let options = new RequestOptions({ headers: headers});
-
-      return this.http.get(this.webservice+"/proof/"+userId+"/"+questionId+"/"+answerId, options);
+      //try to look at the other methods to  complete this one
     }
 
     //Get User Id
