@@ -20,10 +20,12 @@ MiniBeacon_52080	3
 MiniBeacon_51923	4			
 
 You will need this information to configure your app. The parameters above tell you how to listen and distinguish between the iBeacons. 
+The full documentation and exercise sheet is inside the project folder!
 
 Task 1: Get iBeacon Data!
 In the page home which is also given you need to scan for the iBeacons we suggest using the Ionic iBeacons plugin. Please follow the guide on https://ionicframework.com/docs/native/ibeacon/ to install the plugin and to find an example (how to use it). With the code given and your knowledge about iBeacon monitoring and sending HTTP requests, you will be able to further develop your app and retrieve question-answer tuples.
 Task 2: Answer Check
-Last but not least: Check if your suggested answer is correct. Implement a HTTP request to our web services to check whether a provided answer is right or not. Afterwards, increase or decrease your score.
+Finally: Check if your suggested answer is correct. Implement a HTTP request to our web services to check whether a provided answer is right or not. Afterwards, increase or decrease your score.
+
 Bonus task: High Score Page
 If this was too easy for you, you may also create a high score page which displays all teams and their score. Remember to call a web service to get the high scores.
