@@ -21,7 +21,7 @@ export class UserPage {
 
   presentAlert(text) {
     let alert = this.alertCtrl.create({
-      title: 'Name already in use',
+      title: 'An error occured',
       subTitle: text,
       buttons: ['Dismiss']
     });
@@ -37,6 +37,7 @@ export class UserPage {
         this.uid = response.json()["uid"];
         this.navCtrl.push(HomePage, {uid: this.uid});
     }, error =>{
+      console.log("Error: ", error);
       this.presentAlert(error);
     });
   }

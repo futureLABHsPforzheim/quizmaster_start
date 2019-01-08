@@ -29,6 +29,7 @@ export class HomePage {
     answer2: { "found": false, "checked": false, "aid": 2 }
   };
   regions = [
+    //Todo Task1:
     //Here you need to add the beacons
   ]
   constructor(private alertCtrl: AlertController, public navParams: NavParams, public http: Http, public navCtrl: NavController, public httpProvider: HttpProvider) {
@@ -55,16 +56,17 @@ export class HomePage {
     */
     ///////////////////////////////////////////////////////////////
 
+    //Todo Task1:
     // create a new delegate and register it with the native layer
 
-
+    //Todo Task1;
     // Subscribe to some of the delegate's event handlers
 
   }
 
   //start the monitoring for all regions
   startMonitoringForAllRegions() {
-
+    //Todo Task1:
   }
 
   //Some alerts
@@ -87,6 +89,7 @@ export class HomePage {
   }
 
   handleBeaconDiscovered(region) {
+    //Todo Task1:
     // 1st found beacon
 
     // 2nd - 4th found beacon
@@ -98,11 +101,13 @@ export class HomePage {
     return true;
   }
 
+  //Todo Task1:
   //Get an answer from the webservice by calling the http provider
   getAnswer() {
 
   }
 
+  //Todo Task1:
   //Get the question from the webservice by calling the http provider
   getQuestion() {
 
@@ -122,6 +127,7 @@ export class HomePage {
     }
   }
 
+  //Todo Task1:
   proofResult() {
     for (var answer in this.data) {
 
