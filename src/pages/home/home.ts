@@ -5,6 +5,7 @@ import { Team } from './../../model/team';
 import { Http, Headers, RequestOptions } from '@angular/http';
 import { AlertController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
+import {NgZone} from '@angular/core';
 
 @Component({
   selector: 'page-home',
@@ -32,7 +33,7 @@ export class HomePage {
     //Todo Task1:
     //Here you need to add the beacons
   ]
-  constructor(private alertCtrl: AlertController, public navParams: NavParams, public http: Http, public navCtrl: NavController, public httpProvider: HttpProvider) {
+  constructor(private zone:NgZone, private alertCtrl: AlertController, public navParams: NavParams, public http: Http, public navCtrl: NavController, public httpProvider: HttpProvider) {
     this.userId = this.navParams.get("uid");
 
     ////////////////////////////////////////////////////////////////
@@ -89,11 +90,12 @@ export class HomePage {
   }
 
   handleBeaconDiscovered(region) {
+    this.zone.run(()=>{
     //Todo Task1:
     // 1st found beacon
 
     // 2nd - 4th found beacon
-
+    });
   }
 
   //Set ion Input to read-only
